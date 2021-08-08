@@ -4,7 +4,7 @@ heroImage: /logo-2.png
 heroText: Python 入门到 Django 全栈开发
 tagline: null
 actionText: 快速上手 →
-actionLink: /guide/
+actionLink: /Python/
 features:
 - title: 简洁至上
   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
@@ -14,7 +14,7 @@ features:
   details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
 footer: MIT Licensed | Copyright © 2021-present Evan You
 ---
-# 像数 1, 2, 3 一样容易
+# 像数 1. 2. 3. 一样容易
 ```sh
 1. Python 基础与进阶
 2. Django+DRF 后端接口开发
@@ -23,7 +23,7 @@ footer: MIT Licensed | Copyright © 2021-present Evan You
 
 
 
-::: tip Thanks 
-
-The logo is powered by [uugai.com](http://www.uugai.com/)
+::: warning Thanks 
+- The website is powered by [VuePress 1.x](https://vuepress.vuejs.org/zh/)
+- The logo is provided by [uugai.com](http://www.uugai.com/)
 :::
