@@ -50,6 +50,11 @@ module.exports = {
     
     lastUpdated: 'Last Updated',  // 最后更新时间
 
+    /**-----------【主题配置:更强的Markdown插件】-----------*/
+    mdEnhance: {
+      enableAll: true,  // 启用 md-enhance 插件的所有功能。
+    },
+
     /**-----------【主题配置:搜素】-----------*/
     /** Algolia替换默认的搜索 */
     // algolia: {

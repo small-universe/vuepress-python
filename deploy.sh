@@ -4,7 +4,7 @@
 set -e
 
 # 1、生成静态文件
-yarn run build
+yarn run docs:build
 
 # 2、进入生成的文件夹
 cd docs/.vuepress/dist
@@ -26,8 +26,8 @@ git commit -m 'deploy-update!'
 # B 如果发布到 https://USERNAME.github.io/<REPO>  REPO=github上的项目
 
 # 提交到github
-git push -f git@github.com:small-universe/vuepress-python-full-stack.git gh-pages
+git push git@github.com:small-universe/vuepress-python-full-stack.git master:gh-pages
 # 提交到gitee
-git push -f git@gitee.com:small-universe/vuepress-python-full-stack.git gh-pages
+git push git@gitee.com:small-universe/vuepress-python-full-stack.git master:gh-pages
 
 # 提交静态文件到部署的仓库结束
