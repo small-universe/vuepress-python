@@ -28,8 +28,9 @@ module.exports = {
     anchor: { permalink: false },   // markdown-it-anchor 的选项
     toc: { includeLevel: [1, 2] },  // markdown-it-toc 的选项
     extendMarkdown: md => {
-      // 使用更多的 markdown-it 插件!
-      // md.use(require('markdown-it-xxx'))
+      // 使用更多的 markdown-it 插件! https://markdown-it.docschina.org/
+      md.use(require('markdown-it-mark'))
+      md.render('==marked==')
     }
   },
 
@@ -48,12 +49,10 @@ module.exports = {
     // sidebar: 'auto',    // 侧边栏自动配置, 可以和自定义的侧边栏兼容, 优先使用自定义的侧边栏
     // sidebarDepth: 2,    // 侧边栏显示,最大深度为2
     
+    smoothScroll: true,    // 页面滚动效果
     lastUpdated: 'Last Updated',  // 最后更新时间
 
-    /**-----------【主题配置:更强的Markdown插件】-----------*/
-    mdEnhance: {
-      enableAll: true,  // 启用 md-enhance 插件的所有功能。
-    },
+    
 
     /**-----------【主题配置:搜素】-----------*/
     /** Algolia替换默认的搜索 */
@@ -87,12 +86,13 @@ module.exports = {
    * 使用插件
    */
    plugins: [
-     ['@vuepress/back-to-top'], // 回到顶部
+     ['@vuepress/active-header-links'],  // 页面滚动时激活侧边栏
+     ['@vuepress/back-to-top'],  // 回到顶部
      ['@vuepress/pwa', {
-      serviceWorker: true, // 是否开启 PWA
+      serviceWorker: true,  // 是否开启 PWA
       updatePopup: true
       }
      ],
-     ['@vuepress/medium-zoom']  // 图片放大
+     ["photo-swipe"],  // 图片预览
     ]
 }
