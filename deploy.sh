@@ -17,14 +17,15 @@ git init
 git add -A
 git commit -m 'deploy-update!'
 
-# 3-1. 提交到github和gitee仓库仓库中
-
 # 如果想用username.gitee.io或者username.github.io访问你的网站，必须让新建的仓库名和你的用户名一致！！
 
-# A 执行提交到github仓库的master中（USERNAME是你的仓库名）
-# 如果你想要部署到 https://USERNAME.github.io
-# B 如果发布到 https://USERNAME.github.io/<REPO>  REPO=github上的项目
+# A:如果发布到 https://<USERNAME>.github.io
+# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
+# B:如果发布到 https://<USERNAME>.github.io/<REPO>
+# git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
+
+# 这里选择第二种方式，注意一定要添加 -f 参数
 # 提交到github
 git push -f git@github.com:small-universe/vuepress-python-full-stack.git master:gh-pages
 # 提交到gitee
