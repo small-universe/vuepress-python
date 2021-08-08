@@ -26,8 +26,8 @@ git commit -m 'deploy-update!'
 # B 如果发布到 https://USERNAME.github.io/<REPO>  REPO=github上的项目
 
 # 提交到github
-git push git@github.com:small-universe/vuepress-python-full-stack.git master:gh-pages
+git push -f git@github.com:small-universe/vuepress-python-full-stack.git master:gh-pages
 # 提交到gitee
-git push git@gitee.com:small-universe/vuepress-python-full-stack.git master:gh-pages
+git push -f git@gitee.com:small-universe/vuepress-python-full-stack.git master:gh-pages
 
 # 提交静态文件到部署的仓库结束
