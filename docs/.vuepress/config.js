@@ -93,5 +93,6 @@ module.exports = {
       updatePopup: true
       }
      ],
+     ['@vuepress/medium-zoom']  // 图片放大
     ]
 }
