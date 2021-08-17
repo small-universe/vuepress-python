@@ -1,8 +1,9 @@
-<h1 align="center">人生苦短 我学Python</h1>
+<h1 align="center">人生苦短 我用Python</h1>
 
 ## 一、Python基础篇
-1. [初识Python](./01.初识Python.md)
-2. [标准数据类型和变量](./02.标准数据类型和变量.md)
+1、 [初识Python](01.初识Python.md)
+
+2、 [标准数据类型和变量](02.标准数据类型和变量.md)
 
 ## 二 、Python高级篇
 

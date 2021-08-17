@@ -1,4 +1,5 @@
-<h1 align="center">Django入门</h1>
+<h1 align="center">Django</h1>
 
-- [Django基础](01.Django.md)
-- [DRF](02.DRF.md)
+1、 [Django基础](01.Django.md)
+
+2、 [DRF](02.DRF.md)

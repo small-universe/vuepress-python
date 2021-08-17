@@ -1,4 +1,6 @@
 module.exports = [
     ['/Python/', 'Python'],
-    ['/Django/', 'Django']
+    ['/Django/', 'Django'],
+    ['/TypeScript/', 'TypeScript'],
+    ['/Jenkins/', 'Jenkins']
 ]
