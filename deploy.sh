@@ -11,7 +11,7 @@ cd docs/.vuepress/dist
 
 # 3、提交
 # 如果是发布到自定义域名
-# echo 'www.yourwebsite.com' > CNAME
+echo 'python.dreamagain.top' > CNAME
 
 git init
 git add -A
