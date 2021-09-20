@@ -1,7 +1,8 @@
-// 导航栏
-const navbar = require('./config/navbar');
-// 侧边栏
-const sidebar = require('./config/sidebar');
+const path = require("path");
+const rootpath = path.dirname(__dirname);
+const getConfig = require("vuepress-bar");
+const  { nav, sidebar } = getConfig(`${rootpath}`, { pinyinNav: true });
+//不使用中文， pinyinNav可以去掉
 
 module.exports = {
   title: 'Python | 全栈开发',   // 网站标题
@@ -44,8 +45,11 @@ module.exports = {
 
     /**-----------【主题配置:导航】-----------*/
     logo: '/logo-1.png',  // 导航栏 Logo
-    nav: navbar,        // 导航栏, 配置内容被单独提取到同级目录下的config/navbar
-    sidebar: sidebar,   // 侧边栏, 配置内容被单独提取到同级目录下的config/sidebar
+    nav: [
+      { text: '首页', link: '/' },
+      ...nav
+    ],        // 导航栏, 配置内容被单独提取到同级目录下的config/navbar
+    sidebar,   // 侧边栏, 配置内容被单独提取到同级目录下的config/sidebar
     // sidebar: 'auto',    // 侧边栏自动配置, 可以和自定义的侧边栏兼容, 优先使用自定义的侧边栏
     // sidebarDepth: 2,    // 侧边栏显示,最大深度为2
     
@@ -93,6 +97,8 @@ module.exports = {
       updatePopup: true
       }
      ],
-     ["photo-swipe"],  // 图片预览
+     ['photo-swipe'],  // 图片预览
+     ['permalink-pinyin'], // 侧边栏自动生成
+     ["rpurl"],
     ]
 }
