@@ -18,7 +18,8 @@
     "vuepress-bar": "^0.4.2",
     "vuepress-plugin-permalink-pinyin": "^1.0.0",
     "vuepress-plugin-photo-swipe": "^1.19.1",
-    "vuepress-plugin-rpurl": "github:boboidream/vuepress-plugin-rpurl"
+    "vuepress-plugin-rpurl": "github:boboidream/vuepress-plugin-rpurl",
+    "vuepress-plugin-toolbar": "^1.0.1"
   },
   "dependencies": {
     "markdown-it-mark": "^3.0.1"

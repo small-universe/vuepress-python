@@ -1,7 +1,6 @@
-const path = require("path");
-const rootpath = path.dirname(__dirname);
+
 const getConfig = require("vuepress-bar");
-const  { nav, sidebar } = getConfig(`${rootpath}`, { pinyinNav: true });
+const  { nav, sidebar } = getConfig({ pinyinNav: true });
 //不使用中文， pinyinNav可以去掉
 
 module.exports = {
@@ -75,7 +74,7 @@ module.exports = {
     // 以下为可选的编辑链接选项
 
     // 假如你的文档仓库和项目本身不在一个仓库：
-    docsRepo: 'small-universe/vuepress-python-full-stack',
+    docsRepo: 'small-universe/vuepress-python',
     // 假如文档不是放在仓库的根目录下：
     docsDir: 'docs',
     // 假如文档放在一个特定的分支下：
@@ -83,14 +82,23 @@ module.exports = {
     // 默认是 false, 设置为 true 来启用
     editLinks: true,
     // 默认为 "Edit this page"
-    editLinkText: '帮助我们改善此页面！'
+    editLinkText: '改善此页面！'
   },
 
   /**
    * 使用插件
    */
    plugins: [
-     ['@vuepress/active-header-links'],  // 页面滚动时激活侧边栏
+      // ['vuepress-plugin-toolbar', {
+      //   pageNav: {
+      //     icon: '',
+      //     name: '导航'
+      //   }
+      // }],
+     ['@vuepress/active-header-links',{
+      sidebarLinkSelector: '.sidebar-link',
+      headerAnchorSelector: '.header-anchor'
+     }],  // 页面滚动时激活侧边栏
      ['@vuepress/back-to-top'],  // 回到顶部
      ['@vuepress/pwa', {
       serviceWorker: true,  // 是否开启 PWA
@@ -100,5 +108,6 @@ module.exports = {
      ['photo-swipe'],  // 图片预览
      ['permalink-pinyin'], // 侧边栏自动生成
      ["rpurl"],
+   
     ]
 }
