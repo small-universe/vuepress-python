@@ -4,7 +4,7 @@ heroImage: /logo-2.png
 heroText: Python 入门到 Django 全栈开发
 tagline: null
 actionText: 快速上手 →
-actionLink: /Python/
+actionLink: /hou-duan/
 features:
 - title: 简洁至上
   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
