@@ -109,6 +109,13 @@ module.exports = {
      ['permalink-pinyin'], // 侧边栏自动生成
      ["rpurl"],
      ['vuepress-plugin-code-copy', true],
+     [
+      "md-enhance",
+      {
+        // 启用 TeX 支持
+        tex: true,
+      },
+    ],
    
     ]
 }
