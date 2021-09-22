@@ -108,6 +108,7 @@ module.exports = {
      ['photo-swipe'],  // 图片预览
      ['permalink-pinyin'], // 侧边栏自动生成
      ["rpurl"],
+     ['vuepress-plugin-code-copy', true],
    
     ]
 }
