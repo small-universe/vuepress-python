@@ -26,7 +26,7 @@ module.exports = {
   markdown: {
     lineNumbers: true,   // 代码块显示行号
     anchor: { permalink: false },   // markdown-it-anchor 的选项
-    toc: { includeLevel: [1, 2] },  // markdown-it-toc 的选项
+    toc: { includeLevel: [1, 2, 3, 4] },  // markdown-it-toc 的选项
     extendMarkdown: md => {
       // 使用更多的 markdown-it 插件! https://markdown-it.docschina.org/
       md.use(require('markdown-it-mark'))
