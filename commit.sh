@@ -10,6 +10,6 @@ git commit -m '提交了源码'
 git push origin master
 # 提交源码到github结束
 
-git push -f git@gitee.com:small-universe/vuepress-python.git master
+# git push -f git@gitee.com:small-universe/vuepress-python.git master
 # 提交源码到gitee结束
 # 源码提交结束
