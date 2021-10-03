@@ -29,6 +29,6 @@ git commit -m 'deploy-update!'
 # 提交到github
 git push -f git@github.com:small-universe/vuepress-python.git master:gh-pages
 # 提交到gitee
-git push -f git@gitee.com:small-universe/vuepress-python.git master:gh-pages
+# git push -f git@gitee.com:small-universe/vuepress-python.git master:gh-pages
 
 # 提交静态文件到部署的仓库结束
