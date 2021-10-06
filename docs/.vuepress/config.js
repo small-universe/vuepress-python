@@ -27,6 +27,7 @@ module.exports = {
     lineNumbers: true,   // 代码块显示行号
     anchor: { permalink: false },   // markdown-it-anchor 的选项
     toc: { includeLevel: [1, 2, 3, 4] },  // markdown-it-toc 的选项
+    extractHeaders: [ 'h2', 'h3', 'h4' ],
     extendMarkdown: md => {
       // 使用更多的 markdown-it 插件! https://markdown-it.docschina.org/
       md.use(require('markdown-it-mark'))
@@ -94,11 +95,11 @@ module.exports = {
       //     icon: '',
       //     name: '导航'
       //   }
-      // }],
-     ['@vuepress/active-header-links',{
-      sidebarLinkSelector: '.sidebar-link',
-      headerAnchorSelector: '.header-anchor'
-     }],  // 页面滚动时激活侧边栏
+      // }], 
+      ['@vuepress/active-header-links', {
+        sidebarLinkSelector: '.sidebar-link',
+        headerAnchorSelector: '.header-anchor'
+      }],  // 页面滚动时激活侧边栏
      ['@vuepress/back-to-top'],  // 回到顶部
      ['@vuepress/pwa', {
       serviceWorker: true,  // 是否开启 PWA
@@ -107,8 +108,21 @@ module.exports = {
      ],
      ['photo-swipe'],  // 图片预览
      ['permalink-pinyin'], // 侧边栏自动生成
-     ["rpurl"],
-     ['vuepress-plugin-code-copy', true],
+     ["rpurl"], // 中文路径转拼音
+     ['vuepress-plugin-code-copy', false], //官方代码复制插件
+     [
+      "vuepress-plugin-nuggets-style-copy",
+      {
+        copyText: "复制代码",
+        tip: { title: "🎉", content: "复制成功" }
+      }
+    ], // 社区代码赋值插件
+    [
+      "@mr-hope/reading-time",
+      {
+        number: 260 // 每分钟阅读字数
+      },
+    ], // 预计阅读时间与字数统计
      [
       "md-enhance",
       {

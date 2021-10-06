@@ -11,6 +11,7 @@
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
+    "@mr-hope/vuepress-plugin-reading-time": "^1.20.3",
     "@vuepress/plugin-active-header-links": "^1.8.2",
     "@vuepress/plugin-back-to-top": "^1.8.2",
     "@vuepress/plugin-pwa": "^1.8.2",
@@ -24,6 +25,7 @@
   },
   "dependencies": {
     "markdown-it-mark": "^3.0.1",
-    "vuepress-plugin-code-copy": "^1.0.6"
+    "vuepress-plugin-code-copy": "^1.0.6",
+    "vuepress-plugin-nuggets-style-copy": "^1.0.3"
   }
 }
