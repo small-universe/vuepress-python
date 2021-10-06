@@ -21,9 +21,11 @@
     "vuepress-plugin-permalink-pinyin": "^1.0.0",
     "vuepress-plugin-photo-swipe": "^1.19.1",
     "vuepress-plugin-rpurl": "github:boboidream/vuepress-plugin-rpurl",
+    "vuepress-plugin-table-of-contents": "^1.1.7",
     "vuepress-plugin-toolbar": "^1.0.1"
   },
   "dependencies": {
+    "element-ui": "^2.15.6",
     "markdown-it-mark": "^3.0.1",
     "vuepress-plugin-code-copy": "^1.0.6",
     "vuepress-plugin-nuggets-style-copy": "^1.0.3"

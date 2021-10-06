@@ -1,5 +1,6 @@
 
 const getConfig = require("vuepress-bar");
+const custom_plugin = require('./custom-plugin') // 在社区目录插件的基础上封装
 const  { nav, sidebar } = getConfig({ pinyinNav: true });
 //不使用中文， pinyinNav可以去掉
 
@@ -130,6 +131,9 @@ module.exports = {
         tex: true,
       },
     ],
+    ['vuepress-plugin-table-of-contents'], // 社区提供的目录插件
+    custom_plugin // 自定义插件
+    
    
     ]
 }
